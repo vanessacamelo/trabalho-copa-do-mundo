@@ -1,0 +1,41 @@
+body, html, h1{
+    height: 100%;
+    margin: 0;
+    font-family: 'roboto, condensed', sans-serif;
+    line-height: 180%;
+    color: black;
+    text-align: center;
+}
+
+.foto1{
+    background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,w_1023,h_682,x_0,y_0/c_fill,w_1620,ar_3:2,f_auto,q_auto,g_auto/images%2FGettyImages%2Fmmsport%2F90min_pt-BR_international_web%2F01fzk2z4989vtq7tc2a9.jpg);
+    min-height: 80%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.letreiro{
+    color: white;
+    font-size: 550%;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px red;
+    font-weight: 400;
+}
+
+.light h1, h3{
+  color: black;
+  justify-content: center;
+}
+
+.imag1{
+  width: 420px;
+  justify-content: center;
+  align-items: center;
+}

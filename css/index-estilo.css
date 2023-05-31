@@ -1,0 +1,237 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
+    text-decoration: none; 
+}
+
+header{
+    height: 100px;
+    background: #750404;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu, .esconder-menu{
+    font-size: 30px;
+    cursor: pointer; /*deixa cursor como mão*/
+    display: none;
+    transition: 0.4s;
+}
+
+.menu a:hover, .mostrar-menu:hover, .esconder-menu:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+body, html, h1{
+    height: 100%;
+    margin: 0;
+    font-family: 'roboto, condensed', sans-serif;
+    line-height: 180%;
+    color: white;
+    text-align: center;
+}
+
+.foto1{
+    background-image: url(../img/IMG-20220918-WA0001.jpg);
+    min-height: 80%;
+}
+
+.foto2{
+    background-image: url(../img/IMG-20220918-WA0002.jpg);
+    min-height: 80%;
+}
+
+.foto3{
+    background-image: url(../img/IMG-20220918-WA0000.jpg);
+    min-height: 80%;
+}
+
+.foto4{
+    background-image: url(../img/IMG-20220918-WA0003.jpg);
+    min-height: 80%;
+}
+
+.foto1, .foto2, .foto3, .foto4{
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.letreiro{
+    color: Yellow;
+    font-size: 450%;
+    /*position: absolute;*/
+    top: 50%;
+}
+
+.letreiro2{
+    color: Red;
+    font-size: 450%;
+    top: 50%;
+}
+
+.letreiro3{
+    color: Green;
+    font-size: 350%;
+    top: 50%;
+}
+.letreiro4{
+    color: White;
+    font-size: 450%;
+    top: 50%;
+}
+
+.letreiro, .letreiro2, .letreiro3, .letreiro4{
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px #000;
+}
+
+section{
+    padding: 50px 80px;
+}
+.dark{
+    background-color: #444;
+    color: #fff;
+}
+
+.light{
+  color: #750404;
+  background-color: #750404;
+}
+
+.botao-infos{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.botao-jogos{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s; 
+}
+
+.botao-destaques{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.botao-jogos:hover{
+    background: white;
+    color: #750404;
+}
+.botao-destaques:hover{
+    background: white;
+    color: #750404;
+}
+
+.botao-infos:hover{
+    background: white;
+    color: #750404;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){ 
+    /*header*/
+.mostrar-menu, .esconder-menu{
+    display: block;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #750404;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+}
+
+.esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/* '~'´ precedidos por*/
+#check:checked ~ .menu{
+    right: 0
+}
+}

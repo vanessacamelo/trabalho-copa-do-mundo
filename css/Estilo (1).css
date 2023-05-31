@@ -1,0 +1,111 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.nav {
+  background: rgb(173, 173, 173);
+}
+
+.nav-link {
+  color: #750404;
+}
+
+.nav-link:hover{
+  color: aliceblue;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #750404;
+  color: white;
+  font-size: 30px;
+}
+
+.header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover
+}
+
+.row {
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.box-container {
+ position: relative;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  padding: 40px 40px;
+}
+
+.card-body {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left:50;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.grid:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#grupos{
+  padding: 50px;
+}
+
+h1{
+  text-align: center;
+  justify-content: center;
+  color: #750404;
+}
+    
+    #estadios{
+      background: #750404;
+    }
+    
+footer {
+ width: 100%;
+ position: relative;
+ bottom: 0;
+ right: 0;
+ background: white;
+ color: black;
+ height: 40px;
+ display: flex;
+}
